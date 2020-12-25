@@ -15,7 +15,7 @@ sum = 0.0
 #If a line starts with X_DSPAM... it will add the float to sum and add 1 to count
 for line in fhand:
 	if line.startswith("X-DSPAM-Confidence: "):
-		num = float(line[21:])
+		num = float(line[20:])
 		sum += num
 		count += 1
 
